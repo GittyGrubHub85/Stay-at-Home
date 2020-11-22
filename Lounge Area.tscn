@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Lounge Area/Lounge Area Background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Lounge Area/Lounge Area Arrow to Living Room.png" type="Texture" id=3]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Lounge Area/Electrical Padlock.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Lounge Area/Paris Portrait.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Lounge Area/Sofa.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Lounge Area/Table.png" type="Texture" id=8]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 53, 50 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 53, 0, 53, 50 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=5]
+blend_mode = 4
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+_room = "Lounge Area"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 4 )]
+position = Vector2( 68.1183, 280.643 )
+_name = "LoungeArea_Arrow_to_LivingRoom"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Selectable"]
+frames = SubResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+polygon = PoolVector2Array( 26.7614, 8.64148, 25.8348, 122.148, -105.74, 124.001, -94.1581, -295.742, 33.1265, -293.423 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 200.832, 176.856 )
+_name = "LoungeArea_ElectricalNumPadLock"
+
+[node name="Sprite2" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 5 )
+
+[node name="Hover" type="Sprite" parent="Selectable2"]
+material = SubResource( 4 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -60.7955, -55.388, -55.006, 61.4252, 59.0827, 58.0195, 53.6337, -61.5181 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 581.997, 165.776 )
+_name = "LoungeArea_ParisPortrait"
+
+[node name="Sprite2" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 6 )
+
+[node name="Hover" type="Sprite" parent="Selectable3"]
+material = SubResource( 5 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -64.6436, -70.0804, -56.4301, 78.7894, 64.7192, 72.6293, 57.5324, -74.7005 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 624.102, 463.838 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+
+[node name="Selectable5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 638.507, 615.639 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]

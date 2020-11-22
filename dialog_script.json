@@ -1,0 +1,294 @@
+{
+	"Story Line":{
+		"Goal 1 - Jenna's Room":{
+			"Plot 1":true
+		},
+		"Goal 2 Parents":{
+			"Plot 1":true
+		},
+		"Goal 3 Leaving House":{
+			"Plot 1":true
+		},
+	},
+	"/root/Main":{
+		"board1":{
+			"line 1":"Narration:-> The clock failed to rang as it died out of batteries...",
+			"line 2":"Jenna:-> It's 8 o'clock already? Didn't my clock rang at 8?",
+			"line 3":"Jenna:-> Oh, I hope the world is doing okay....",
+			"line 4":"Jenna:->",
+			"line 5":"Jenna:->",
+			"line 6":"Jenna:->"
+		},
+
+		"JennaRoom_wakes_up":{
+			"line 1":"It's 8AM already? Time flies really fast.",
+		},
+
+		"JennaRoom_Bed":{
+			"line 1":"I don't feel like sleeping right now.",
+		},
+		"JennaRoom_Bed_1":{
+			"line 1":"I still don't feel like sleeping.",
+		},
+		"JennaRoom_Poster":{
+			"line 1":"I remember I printed out this poster at the campus and set it up here.",
+			"line 2":"I wonder how long will the pandemic ever going to end...",
+		},
+		"JennaRoom_Desktop_1":{
+			"line 1":"Hmmm, I wonder how are my friends doing in social media right now? I should take a look.",
+			"line 2":"A post on the newsfeed says: A vaccine of the virus will be completed tomorrow.",
+			"line 3":"I don't think the official news had ever claim a vaccine to be completed tomorrow. They're just spreading misinformation.",
+		},
+		"JennaRoom_Desktop_2":{
+			"line 1":"Let me check the module of my virtual class.",
+			"line 2":"My assignment's deadline will be next week, I got more time to do later.",
+		},
+		"JennaRoom_Desktop_3":{
+			"line 1":"I love how my laptop is just there. I have a phone to take photos of myself. I love my headphones too even if it was an expensive item to buy online.",
+			"line 2":"I just feel so wonderful to have them in my room. It makes me happy.",
+		},
+		"JennaRoom_Desktop_4":{
+			"line 1":"Mom... Dad.. I hope things would turn out okay.",
+		},
+		"JennaRoom_Desktop_5":{
+			"line 1":"I don't feel like looking up to my social media. I'm so worried about my parents right now.",
+		},
+		"JennaRoom_Desktop_6":{
+			"line 1":"There's a video on other posts on social media let me watch it.",
+			"line 2":"*Watches a video of an infected boy suffering from pneumonia.*",
+			"line 3":"I feel so sorry for him, will he ever going to make it?",
+		},
+		"JennaRoom_phone_ringing":{
+			"line 1":"What's that sound?",
+			"line 2":"It's coming from my phone. I should check it out.",
+		},
+		"JennaRoom_Desktop_mobile":{
+			"line 1":"I look up to my mobile phone, a message notification showed up. It's a message from my mother, she said the following text...",
+			"line 2":"Good Morning Jen, me and your dad are at the hospital. Don't worry we'll be fine. You just stay in the house for a while and be a good girl until we get back. \n\nLove from MOM",
+			"line 3":"They're gone at the hospital. I feel so worried, how could they be gone at the hospital? I hope they're fine...",
+		},
+		"JennaRoom_Journal":{
+			"line 1":"Day 133, it's been weeks for me staying at home, never went outside. How long will this ever going to end? I keep bragging about this I really wish things would go back to normal I'm so worried.",
+			"line 2":"Day 135 Will there be a better day for me? I'm so stupid to keep staying at home for such a long time. My parents didn't tell me to go outside, they don't seem to care. They didn't put be grounded, I just don't want to go outside!",
+			"line 3":"Day 136 I remember one day my dad was at the kitchen, he left a paper on the kitchen counter something I don't know what it does.",
+			"line 4":"Unfortunately, the paper was half torn but I did remember what the missing part was I think it's 3..7..1... I forgot the last digit it could be either 5 or 6.",
+		},
+		"JennaRoom_SidePoster":{
+			"line 1":"Always wash your hand folks or you don't want to get into your funerals early.",
+			"line 2":"That's also right. Staying at home is the world's one way motto to survive.",
+			},
+		"JennaRoom_Cabinet":{
+			"line 1":"It's a Cabinet. I laundry my clothes with washing machine at the bathroom 3 days ago and iron them when they were all dry before putting them here a day later.",
+			"line 2":"It's nice to see my clothes are newly hanged fresh from the laundry.",
+		},
+		"JennaRoom_Cabinet_10":{
+			"line 1":"I should pick my favorite jeans before I can go outside. I just want to wear clothes for now I'm in a hurry. I'll carry my other stuff at the hospital.",
+			"line 2":"Where is my favorite jeans? It's not here.",
+			"line 3":"I'm missing one jean in my cabinet. I wonder where did the other jean go? I need that jeans it's my favorite. I hope I didn't lost it.",
+		},
+		"JennaRoom_Cabinet_11":{
+			"line 1":"I got my bag and makeup with me but I'm missing a jean. I better need to find it.",
+		},
+		"JennaRoom_Cabinet_12":{
+			"line 1":"My clothes are complete, nothing's missing anymore.",
+		},
+		"JennaRoom_Door":{
+			"line 1":"I'm so lazy to go out of my room right now. I like to stay here for a little while.",
+		},
+		"JennaRoom_Door1":{
+			"line 1":"I think I'm ready to get of my room now.",
+		},
+		"JennaRoom_SecondWindow_0":{
+			"line 1":"The outside sure looks boring today, I like it.",
+			"line 2":"I think I probably want to go and check how's mom and dad doing now.",
+			"line 3":"I can leave my room now.",
+		},
+		"JennaRoom_SecondWindow_1":{
+			"line 1":"The outside is still boring, I like it.",
+		},
+		"JennaRoom_SecondWindow_Raining":{
+			"line 1":"It's raining outside.",
+		},
+		"JennaRoom_FirstWindow":{
+			"line 1":"The outside sure looks boring today like every other day I typically see. Which is a good sign for the weather.",
+		},
+		"JennaRoom_coughs":{
+			"line 1":"*coughs*",
+			"line 2":"Okay, I need to go to my cabinet to wear my jeans.",
+		},
+		
+
+		"HouseCorridor_Soliloquy":{
+			"line 1":".....................",
+			"line 2":"I need to go outside, I don't feel so good staying at home anymore.",
+			"line 3":"Sorry mom, I need to visit my friend's neigborhood to take me to the Hospital to see you and dad.",
+		},
+		"HouseCorridor_Outside_Door_1":{
+			"line 1":"That's the door to outside. I should go to my parent's room it's above near my room.",
+		},
+		"HouseCorridor_Outside_Door_2":{
+			"line 1":"I'm not yet ready to go outside yet. I need to find mom and dad here first.",
+		},
+		"HouseCorridor_Outside_Door_4":{
+			"line 1":"Is the door locked? They locked me in. I should find a key to open the door somehow.",
+		},
+		"HouseCorridor_Outside_Door_7":{
+			"line 1":"Something is not right....",
+			"line 2":"Oh yeah, I'm half naked.",
+			"line 3":"I need to wear jeans before I can go outside.",
+		},
+		"HouseCorridor_Outside_Door_13":{
+			"line 1":"I'm not feeling well today *cough* *cough*...",
+			"line 2":"What's happening to me? I don't feel so good... I wanna go outside...",
+		},
+		"HouseCorridor_Outside_Door_coughs":{
+			"line 1":"*coughs* *coughs*",
+			"line 2":"I don't feel so good today, I'm so dizzy.",
+			"line 3":"It's happening so fast. Why is this happening to me...",
+		},
+		"HouseCorridor_Outside_Door_gag":{
+			"line 1":"*gags*",
+			"line 2":"I'm choking... I need help....",
+		},
+		"HouseCorridor_Outside_Door_gagging":{
+			"line 1":"*gagging*",
+			"line 2":"I... need... to leave...",
+		},
+		"HouseCorridor_LivingRoom_Door_1":{
+			"line 1":"That's the Living Room. I should go to my parent's room it's above near my room.",
+		},
+		"HouseCorridor_Bathroom_Door_1":{
+			"line 1":"That's the Bathroom. I should go to my parent's room it's above near my room.",
+		},
+		"HouseCorridor_Kitchen_Hall_1":{
+			"line 1":"That's the Kitchen area. I should go to my parent's room it's above near my room.",
+		},
+		"HouseCorridor_Clock":{
+			"line 1":"It's already past 8AM.",
+		},
+		
+
+
+		"ParentRoom_Jenna_comes_in":{
+			"line 1":"Mom?",
+			"line 2":"Dad?",
+			"line 3":"There's nobody here, where did mom and dad go?",
+		},
+		"ParentRoom_Clock":{
+			"line 1":"There's a clock. It's such in good shape even if it was been bought last year.",
+		},
+		"ParentRoom_FrontMirror_1":{
+			"line 1":"I can see the front view of the bed on the mirror.",
+			"line 2":"Is that.... [color=maroon]blood?[/color]",
+			"line 3":"[shake]Oh no[/shake]..... there's a [color=maroon]blood[/color] on my dad's pillow. I wonder what happen to his pillow?",
+		},
+		"ParentRoom_FrontMirror_3":{
+			"line 1":"I don't want to look at the mirror. I wish everything's going to be fine.",
+		},
+		"ParentRoom_LeftWardrobe":{
+			"line 1":"The wardrobe on the left is my mother's.",
+		},
+		"ParentRoom_RightWardrobe":{
+			"line 1":"The wardrobe on the left is my father's.",
+		},
+		"ParentRoom_DoubleSizedBed":{
+			"line 1":"A double sized bed used for my parents to sleep.",
+		},
+		"ParentRoom_Windows":{
+			"line 1":"The windows I can see outside, the sky looks so boring dirty white today.",
+		},
+
+
+		"LivingRoom_TV":{
+			"line 1":"A news cast reporting the number of fatalities in the town I'm living in.",
+			"line 2":"There are 1000 infected local patients from the virus killed for the last 24 hours and may surge in the following days.",
+			"line 3":"That's a terrifying number. I hope that's not going to be me.",
+		},
+		"LivingRoom_FamilyPicture":{
+			"line 1":"A picture of me and my parents as a family of 3.",
+			"line 2":"I was 8 years old at the time when we were taking photos together.",
+			"line 3":"How sweet.",
+		},
+
+
+		"LoungeArea_ParisPortrait":{
+			"line 1":"A portrait of the Eiffel Tower in Paris.",
+			"line 2":"I sure want to visit Paris someday. But I've never get the chance to go there. My parents had visited Paris before I was born. They say that it was one of most wonderful place they had ever visited.",
+			"line 3":"It sucks that I can't visit any countries this year due to the pandemic. I wish the pandemic will be over for good so I can visit Paris, one of my most anticipated locations.",
+		},
+		"LoungeArea_ElectricalNumPadLock_2":{
+			"line 1":"This is an electrical numeric pad that locks special items my dad used to store.",
+			"line 2":"As for the time being, I don't know the code of it yet.",
+		},
+		"LoungeArea_ElectricalNumPadLock_6":{
+			"line 1":"I should look for clues in opening the lock. There might be something useful in it.",
+		},
+		"LoungeArea_ElectricalNumPadLock_7":{
+			"line 1":"Yes, I finally unlocked it! I found the keys to the outside door. Now I can leave.",
+		},
+
+
+		"Kitchen_Sink_2":{
+			"line 1":"A sink.",
+			"line 2":"Wait, what happen to the si- *sees the sink*",
+		},
+		"Kitchen_Sink_2_shock_factor":{
+			"line 1":"What happen to the sink?! There's blood all over it!",
+			"line 2":"This is disgusting, I don't want to see this...",
+		},
+		"Kitchen_Sink_3":{
+			"line 1":"Oh... it makes me feel [color=maroon][wave]sick[/wave][/color] looking at this.",
+		},
+		"Kitchen_Paper_2":{
+			"line 1":"I can't read the paper right now. Where's mom and dad?",
+		},
+		"Kitchen_Paper_6":{
+			"line 1":"Here's a paper that was left from my dad days ago. They're all written in numbers and the numbers are: 9, 1, 7, 2....",
+			"line 2":"The rest of the numbers are missing. The paper is half torn I can't tell what the whole numbers written on it.",
+		},
+
+
+
+		"DiningRoom_LeftPlant":{
+			"line 1":"The Plant look so gorgeous today.",
+		},
+		"DiningRoom_FrontPlant":{
+			"line 1":"Horizon of plants on the front look so magnificent to watch by.",
+		},
+		"DiningRoom_RightPlant":{
+			"line 1":"Being filled with plants on the side of the window is a fascinating idea to give life to the area.",
+		},
+		"DiningRoom_Paper":{
+			"line 1":"There's a paper on the table. It's written something saying:\n'We are all going to die'\n'There is no hope'\n'We will be stuck in our homes forever'",
+			"line 2":"That's intense, who wrote this paper anyway?",
+		},
+
+
+		"Bathroom_Jeans_11":{
+			"line 1":"Is that my jean I missed out? Oh thank goodness I found it. I should pick it up back to my cabinet.",
+			"line 2":"What's this paper doing in my pocket? *Takes the paper out from the pocket of her jeans*",
+		},
+		"Bathroom_Jeans_11_paper_pickup":{
+			"line 1":"What the.... What is this?! Who wrote this for me? I can't believe it, someone must be pranking on me. This must be stupid for anyone to make fun on me this isn't funny.",
+		},
+		"Bathroom_WashingMachine":{
+			"line 1":"It's a washing machine.",
+		},
+		"Bathroom_Toilet":{
+			"line 1":"It's a Toilet.",
+		},
+		"Bathroom_Shower":{
+			"line 1":"It's a Shower.",
+		},
+		"Bathroom_Towel":{
+			"line 1":"It's a Towel.",
+		},
+
+
+		"Ending_Dialog":{
+			"line 1":"I'm not feeling well today *cough* *cough*...",
+			"line 2":"What's happening to me?",
+		},
+		
+	},
+}

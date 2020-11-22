@@ -1,0 +1,179 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Text Dialog Assets/addons/My RPG Text Dialogue/default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Padlock/Electric Padlock Safe.gd" type="Script" id=2]
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 253.0
+margin_bottom = 346.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Close" type="Button" parent="."]
+visible = false
+margin_left = 222.901
+margin_top = 4.93097
+margin_right = 242.901
+margin_bottom = 24.931
+text = "X"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="7" type="Button" parent="."]
+margin_left = 36.5108
+margin_top = 121.803
+margin_right = 86.5108
+margin_bottom = 164.803
+text = "7"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="8" type="Button" parent="."]
+margin_left = 97.0952
+margin_top = 121.803
+margin_right = 147.095
+margin_bottom = 164.803
+text = "8"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="9" type="Button" parent="."]
+margin_left = 162.698
+margin_top = 121.803
+margin_right = 212.698
+margin_bottom = 164.803
+text = "9"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="4" type="Button" parent="."]
+margin_left = 35.6488
+margin_top = 173.038
+margin_right = 85.6488
+margin_bottom = 216.038
+text = "4"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="5" type="Button" parent="."]
+margin_left = 98.3255
+margin_top = 174.704
+margin_right = 148.326
+margin_bottom = 217.704
+text = "5"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="6" type="Button" parent="."]
+margin_left = 162.505
+margin_top = 176.487
+margin_right = 212.505
+margin_bottom = 219.487
+text = "6"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1" type="Button" parent="."]
+margin_left = 35.2218
+margin_top = 224.738
+margin_right = 85.2218
+margin_bottom = 267.738
+text = "1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Button" parent="."]
+margin_left = 97.6671
+margin_top = 224.815
+margin_right = 147.667
+margin_bottom = 267.815
+text = "2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3" type="Button" parent="."]
+margin_left = 162.525
+margin_top = 228.109
+margin_right = 212.525
+margin_bottom = 271.109
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="0" type="Button" parent="."]
+margin_left = 36.6081
+margin_top = 281.069
+margin_right = 86.6081
+margin_bottom = 324.069
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CE" type="Button" parent="."]
+margin_left = 98.971
+margin_top = 279.083
+margin_right = 148.971
+margin_bottom = 322.083
+text = "CE"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enter" type="Button" parent="."]
+margin_left = 162.526
+margin_top = 279.48
+margin_right = 212.526
+margin_bottom = 322.48
+text = "Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Padscreen" type="Panel" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+margin_left = 27.0
+margin_top = 27.0
+margin_right = 216.0
+margin_bottom = 74.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 33.0
+margin_top = 34.0
+margin_right = 33.0
+margin_bottom = 68.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Close" to="." method="_on_Close_pressed"]
+[connection signal="pressed" from="7" to="." method="_on_7_pressed"]
+[connection signal="pressed" from="8" to="." method="_on_8_pressed"]
+[connection signal="pressed" from="9" to="." method="_on_9_pressed"]
+[connection signal="pressed" from="4" to="." method="_on_4_pressed"]
+[connection signal="pressed" from="5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="6" to="." method="_on_6_pressed"]
+[connection signal="pressed" from="1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="0" to="." method="_on_0_pressed"]
+[connection signal="pressed" from="CE" to="." method="_on_CE_pressed"]
+[connection signal="pressed" from="Enter" to="." method="_on_Enter_pressed"]

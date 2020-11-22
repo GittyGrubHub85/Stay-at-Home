@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Gag.wav-455834d541e947a35b98a7e2a5df7716.sample"
+
+[deps]
+
+source_file="res://Sound Assets/Gag.wav"
+dest_files=[ "res://.import/Gag.wav-455834d541e947a35b98a7e2a5df7716.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

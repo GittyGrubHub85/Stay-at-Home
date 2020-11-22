@@ -1,0 +1,129 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Assets/Kitchen/Kitchen_Background.png" type="Texture" id=1]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/House Corridor/House Corridor Arrow.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Kitchen/Stove.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Kitchen/Sink.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Kitchen/Kitchen Apparatus.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Kitchen/Paper.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Kitchen/Counter.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Kitchen/Arrow.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Kitchen/Fridge.png" type="Texture" id=10]
+[ext_resource path="res://Main.gd" type="Script" id=11]
+[ext_resource path="res://Assets/Kitchen/Mat.png" type="Texture" id=12]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 11 )
+_room = "Kitchen"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 2 )]
+position = Vector2( 183.55, 538.201 )
+_name = "Kitchen_to_House_Corridor"
+
+[node name="Hover" type="Sprite" parent="Selectable"]
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+polygon = PoolVector2Array( -132.384, -407.263, 49.3343, -464.881, 56.349, -457.863, 70.3158, -65.3213, 24.7398, 4.51294, -135.511, 76.5524 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 603.86, 687.231 )
+_name = "Kitchen_to_Dining_Room"
+
+[node name="Hover" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -607.787, -14.0974, -33.8224, -30.718, 35.9841, -29.6099, 583.356, -30.718, 647.623, 51.277, -606.68, 47.9529 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 364.638, 304.524 )
+_name = "Kitchen_Refrigerator"
+
+[node name="Sprite" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( 50.3244, 165.399, 50.3244, 165.399, -107.052, 168.626, -116.014, -123.901, -15.6375, -168.712, 102.664, -160.467, 116.645, -25.675, 47.8149, 44.5888 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 633.476, 373.825 )
+
+[node name="Sprite" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+
+[node name="Selectable5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 911.268, 332.099 )
+_name = "Kitchen_Stove"
+
+[node name="Sprite" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( -91.6021, -129.762, -92.3927, -57.0295, -66.0405, -8.27798, -59.3093, -4.07739, -59.1345, -1.80466, -60.8827, 0.118439, -55.4632, 9.20938, -55.2883, 130.014, 89.1179, 130.014, 93.1387, 3.09042, 19.7122, -60.8958, 19.8871, -132.924 )
+
+[node name="Selectable6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 641.901, 282.901 )
+_name = "Kitchen_Sink"
+
+[node name="Sprite" type="Sprite" parent="Selectable6"]
+texture = ExtResource( 5 )
+
+[node name="Hover" type="Sprite" parent="Selectable6"]
+material = SubResource( 1 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable6"]
+polygon = PoolVector2Array( -47.7355, 0.183075, -18.748, -7.45908, -17.4305, -14.0471, -5.04492, -18.7905, -4.51788, -31.176, -8.4707, -32.2301, -7.68011, -45.1427, -4.78143, -54.893, 2.07013, -56.7377, 7.07709, -54.366, 9.44879, -46.7238, 10.7664, -37.237, 10.5029, -32.2301, 8.6582, -30.9125, 11.0299, -16.4188, 21.8343, -13.2566, 27.1047, -5.08737, 54.511, -0.0804749, 74.5386, 52.0969, -73.8242, 52.3604, -73.8242, 52.3604 )
+
+[node name="Selectable7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 651.853, 188.358 )
+
+[node name="Sprite" type="Sprite" parent="Selectable7"]
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable7"]
+
+[node name="Selectable8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 834.799, 327.241 )
+_name = "Kitchen_Paper"
+
+[node name="Sprite" type="Sprite" parent="Selectable8"]
+texture = ExtResource( 7 )
+
+[node name="Hover" type="Sprite" parent="Selectable8"]
+material = SubResource( 2 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable8"]
+polygon = PoolVector2Array( -2.42163, -8.64285, -16.1725, -0.803558, 5.16064, 8.44937, 15.1846, 1.25266 )
+
+[node name="Selectable9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 633.606, 524.34 )
+
+[node name="Sprite" type="Sprite" parent="Selectable9"]
+texture = ExtResource( 12 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable9"]

@@ -1,0 +1,114 @@
+{
+	"Story Line":{
+		"Goal 1 - Jenna's Room":{
+			"Plot 1":true
+		},
+		"Goal 2 Parents":{
+			"Plot 1":true
+		},
+		"Goal 3 Leaving House":{
+			"Plot 1":true
+		},
+	},
+	"/root/Main":{
+		"board1":{
+			"line 1":"Narration:-> The clock failed to rang as it died out of batteries...",
+			"line 2":"Jenna:-> It's 8 o'clock already? Didn't my clock rang at 8?",
+			"line 3":"Jenna:-> Oh, I hope the world is doing okay....",
+			"line 4":"Jenna:->",
+			"line 5":"Jenna:->",
+			"line 6":"Jenna:->"
+		},
+		"JennaRoom_Bed":{
+			"line 1":"Jenna:-> I don't feel like sleeping right now.",
+		},
+		"JennaRoom_Poster":{
+			"line 1":"Jenna:-> I remember I printed out this poster at the campus and set it up here.",
+			"line 2":"Jenna:-> I wonder how long will the pandemic ever going to end...",
+		},
+		"JennaRoom_Desktop_1":{
+			"line 1":"Jenna:-> Hmmm, I wonder how are my friends doing in social media right now? I should take a look.",
+			"line 2":"Jenna:-> A post on the newsfeed says: A vaccine of the virus will be completed tomorrow.",
+			"line 3":"Jenna:-> I don't think the official news had ever claim a vaccine to be completed tomorrow. They're just spreading misinformation.",
+		},
+		"JennaRoom_Desktop_2":{
+			"line 1":"Jenna:-> There's a video on other posts on social media let me watch it.",
+			"line 2":"Jenna:-> *Watches a video of an infected boy suffering from pneumonia.*",
+			"line 3":"Jenna:-> I feel so sorry for him, will he ever going to make it?",
+		},
+		"JennaRoom_Desktop_mobile":{
+			"line 1":"Jenna:-> I look up to my mobile phone, a message notification showed up. It's a message from my mother, she said the following text...",
+			"line 2":"Jenna:-> Good Morning Jen, me and your dad are at the hospital. Don't worry we'll be fine you just stay in the house for a while and be a good girl until we get back. Love from MOM",
+			"line 3":"Jenna:-> They're gone at the hospital. I hope they're fine...",
+		},
+		"JennaRoom_Journal":{
+			"line 1":"Jenna:-> Day 133, it's been months for me to stay at home. How long will this ever going to end? I keep bragging about this I really wish things would go back to normal I'm really scared right now.",
+			"line 2":"Jenna:-> Day 135 Will there be a better day for me? I'm so stupid to keep staying at home for such a long time. My parents didn't tell me to go outside, they don't seem to care. They didn't put be grounded, I just don't want to go outside!",
+			"line 3":"Jenna:-> Day 136 I remember one day my dad was at the kitchen, he left a secret code paper on the kitchen counter for the electrical pad key lock behind the lounge at the living room.",
+			"line 4":"Jenna:-> Unfortunately, the paper was half torn but I did remember what the missing part was I think it's 3..7..1... I forgot the last digit it could be either 5 or 6.",
+		},
+		"JennaRoom_SidePoster":{
+			"line 1":"Jenna:-> Always wash your hand folks or you don't want to get into your funerals early.",
+			"line 2":"Jenna:-> That's also right. Staying at home is the world's one way motto to survive.",
+			},
+		"JennaRoom_Cabinet":{
+			"line 1":"Jenna:-> It's a Cabinet. I laundry my clothes with washing machine at the bathroom 3 days ago and iron them when they were all dry before putting them here a day later.",
+			"line 2":"Jenna:-> Hmm.... I'm missing one jean in my cabinet. I wonder where did the other jean go? I hope I didn't lost it.",
+		},
+		"JennaRoom_Cabinet_foundedJean":{
+			"line 1":"Jenna:-> My clothes are complete, nothing's missing anymore.",
+		},
+		"JennaRoom_Door":{
+			"line 1":"Jenna:-> I'm so lazy to go out of my room right now. I like to stay here for a little while.",
+		},
+		"JennaRoom_Door1":{
+			"line 1":"Jenna:-> I think I'm ready to get of my room now.",
+		},
+
+		
+		"HouseCorridor_Outside_Door":{
+			"line 1":"Jenna:-> I'm not yet ready to go outside yet. I should go to my parent's room to see what they're doing.",
+		},
+		"HouseCorridor_Outside_Door_second_plot":{
+			"line 1":"Jenna:-> Is the door locked? They locked me in. I should find a key to open the door somehow.",
+		},
+
+
+		"ParentRoom_Clock":{
+			"line 1":"Jenna:-> There's a clock. It's such in good shape even if it was been bought last year.",
+		},
+		"ParentRoom_FrontMirror":{
+			"line 1":"Jenna:-> I can see the front view of the bed on the mirror.",
+			"line 2":"Jenna:-> Is that.... [color=maroon]blood?[/color]",
+			"line 3":"Jenna:-> [shake]Oh no[/shake]..... there's a [color=maroon]blood[/color] on my dad's pillow. I wonder what happen to his pillow?",
+		},
+		"ParentRoom_LeftWardrobe":{
+			"line 1":"Jenna:-> The wardrobe on the left is my mother's.",
+		},
+		"ParentRoom_RightWardrobe":{
+			"line 1":"Jenna:-> The wardrobe on the left is my father's.",
+		},
+		"ParentRoom_DoubleSizedBed":{
+			"line 1":"Jenna:-> A double sized bed used for my parents to sleep.",
+		},
+		"ParentRoom_Windows":{
+			"line 1":"Jenna:-> The windows I can see outside, the sky looks so boring dirty white today.",
+		},
+
+
+		"Bathroom_Jeans":{
+			"line 1":"Jenna:-> Is that my jean I missed out? Oh thank goodness I found it. I should pick it up back to my cabinet.",
+			"line 2":"Jenna:-> What's this paper doing in my pocket? *Takes the paper out from the pocket of her jeans*",
+		},
+
+		"Bathroom_Jeans_paper_pickup":{
+			"line 1":"Jenna:-> What the.... What is this?! Who wrote this for me? I can't believe it, someone must be pranking on me. This must be stupid for anyone to make fun on me this isn't funny.",
+		},
+
+		"Ending_Dialog":{
+			"line 1":"Jenna:-> I'm not feeling well today *cough* *cough*...",
+			"line 2":"Jenna:-> What's happening to me?",
+		},
+		
+	},
+}

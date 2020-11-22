@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Door Open and Close.wav-d33cd93a2e473ce550a71f2e3214095a.sample"
+
+[deps]
+
+source_file="res://Sound Assets/Door Open and Close.wav"
+dest_files=[ "res://.import/Door Open and Close.wav-d33cd93a2e473ce550a71f2e3214095a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

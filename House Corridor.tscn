@@ -1,0 +1,163 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Assets/House Corridor/House Corridor Background.png" type="Texture" id=1]
+[ext_resource path="res://Main.gd" type="Script" id=2]
+[ext_resource path="res://Assets/House Corridor/JennaRoom_Door.png" type="Texture" id=3]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/House Corridor/ParentRoom_Door.png" type="Texture" id=5]
+[ext_resource path="res://Assets/House Corridor/Bathroom_Door.png" type="Texture" id=6]
+[ext_resource path="res://Assets/House Corridor/LivingRoom_Door.png" type="Texture" id=7]
+[ext_resource path="res://Assets/House Corridor/Outside_Door.png" type="Texture" id=8]
+[ext_resource path="res://Assets/House Corridor/House Corridor Arrow.png" type="Texture" id=9]
+[ext_resource path="res://Assets/House Corridor/Clock.png" type="Texture" id=10]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=5]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 2 )
+_room = "House Corridor"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 0.307373
+margin_right = 1280.31
+margin_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 4 )]
+position = Vector2( 238.21, 394.564 )
+_name = "HouseCorridor_JennaRoom_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable"]
+texture = ExtResource( 3 )
+
+[node name="Hover" type="Sprite" parent="Selectable"]
+material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+polygon = PoolVector2Array( -36.809, -114.614, -26.3589, 139.987, 35.3913, 90.5872, 22.0912, -135.514 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 419.073, 286.857 )
+_name = "HouseCorridor_ParentRoom_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 5 )
+
+[node name="Hover" type="Sprite" parent="Selectable2"]
+material = SubResource( 2 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -22.1313, -75.4049, -15.7162, 93.6501, 22.774, 65.3485, 17.1136, -91.2538 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 798.862, 229.534 )
+_name = "HouseCorridor_Bathroom_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 6 )
+
+[node name="Hover" type="Sprite" parent="Selectable3"]
+material = SubResource( 3 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -16.0588, -81.7271, 15.2914, -57.027, 9.59137, 79.7735, -16.0588, 46.5234 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 667.999, 176.332 )
+_name = "HouseCorridor_Outside_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 8 )
+
+[node name="Hover" type="Sprite" parent="Selectable4"]
+material = SubResource( 4 )
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+polygon = PoolVector2Array( -39.7184, -66.0247, -36.9522, 66.754, 40.502, 67.0613, 38.3505, -66.3321 )
+
+[node name="Selectable5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 994.753, 434.448 )
+_name = "HouseCorridor_LivingRoom_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 7 )
+
+[node name="Hover" type="Sprite" parent="Selectable5"]
+material = SubResource( 5 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( -48.5488, -183.947, -49.4988, 58.3035, 38.8516, 181.804, 47.4016, -133.597 )
+
+[node name="HouseCorridor_Guide" type="Panel" parent="."]
+margin_left = 2.0
+margin_top = -30.0
+margin_right = 160.0
+margin_bottom = -15.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="HouseCorridor_Guide"]
+margin_left = 3.0
+margin_top = 1.0
+margin_right = 148.0
+margin_bottom = 15.0
+custom_colors/font_color = Color( 0.976471, 0.976471, 0.976471, 1 )
+text = "I came from this door."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.75
+autostart = true
+
+[node name="Selectable6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 586.174, 264.652 )
+_name = "HouseCorridor_Kitchen_Hall"
+
+[node name="Hover" type="Sprite" parent="Selectable6"]
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable6"]
+polygon = PoolVector2Array( -56.3072, -133.388, -57.4393, 19.4411, -17.4395, 7.74307, -3.88324, 10.8245, 4.16107, 1.94794, 22.4689, 2.78012, 25.7977, -7.48337, 5.82544, -8.87033, 6.10284, -11.3669, -4.43805, -42.9895, -11.6502, -107.344, -11.9276, -151.727 )
+
+[node name="Selectable7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 890.048, 212.178 )
+_name = "HouseCorridor_Clock"
+
+[node name="Sprite" type="Sprite" parent="Selectable7"]
+texture = ExtResource( 10 )
+
+[node name="Hover" type="Sprite" parent="Selectable7"]
+material = SubResource( 6 )
+texture = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable7"]
+polygon = PoolVector2Array( -15.34, -32.984, -0.249695, -37.7687, 11.344, -29.8555, 15.3926, -25.0708, 19.6252, -8.14034, 20.3613, 14.679, 16.3127, 29.0332, 8.03149, 36.3942, -2.82611, 36.3942, -13.8677, 24.6165, -18.2844, 8.79016, -19.7566, -8.87645, -19.3885, -23.4146 )
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

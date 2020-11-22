@@ -1,0 +1,119 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Living Room/Living Room Background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Living Room/Door.png" type="Texture" id=3]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Living Room/Living Room Arrow to Lounge Area.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Living Room/TV Canvas.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Living Room/TV Output.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Living Room/Couch.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Living Room/Family Picture.png" type="Texture" id=9]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 53, 50 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 53, 0, 53, 50 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 2 ), SubResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+_room = "Living Room"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 4 )]
+position = Vector2( 524.111, 280.478 )
+_name = "LivingRoom_Door"
+
+[node name="Sprite2" type="Sprite" parent="Selectable"]
+texture = ExtResource( 3 )
+
+[node name="Hover" type="Sprite" parent="Selectable"]
+material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+polygon = PoolVector2Array( -73.1887, -119.267, -66.3612, 119.695, 73.602, 122.133, 72.6266, -119.754 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1219.64, 283.858 )
+_name = "LivingRoom_Arrow_to_LoungeArea"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -27.1193, 9.82245, -28.3798, 123.898, 74.3513, 129.57, 74.3512, -295.219, -18.2957, -293.329, -24.5983, -7.82462 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Selectable2"]
+scale = Vector2( -1, 1 )
+frames = SubResource( 4 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 902.896, 223.769 )
+_name = "LivingRoom_TV"
+
+[node name="Sprite2" type="Sprite" parent="Selectable3"]
+position = Vector2( 0, -13 )
+texture = ExtResource( 7 )
+
+[node name="Hover" type="Sprite" parent="Selectable3"]
+material = SubResource( 7 )
+position = Vector2( 0, -13 )
+texture = ExtResource( 7 )
+
+[node name="Sprite" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -111.885, -71.713, -107.889, 71.8232, 113.716, 71.5158, 110.949, -70.1761 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 911.863, 591.229 )
+_name = "LivingRoom_Couch"
+
+[node name="Sprite" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+polygon = PoolVector2Array( -251.43, -123.06, -213.43, -128.437, -184.393, -115.173, -170.77, -100.117, -165.035, -81.4755, -167.903, -69.2869, -119.148, -74.6642, -25.5833, -70.3623, 156.887, -58.1738, 185.566, -56.3813, 185.924, -62.1171, 192.377, -90.0791, 192.377, -90.0791, 209.226, -109.796, 239.339, -117.683, 267.301, -115.89, 276.621, -109.796, 304.225, -73.5887, 323.583, -38.8154, 334.526, -19.1991, 338.613, 4.98083, 333.845, 42.1022, 331.121, 81.6074, 329.077, 115.664, 325.331, 129.627, -317.311, 129.286, -331.955, 69.6876, -337.404, 30.5229, -335.02, 0.553223, -322.419, -26.6918, -304.369, -43.3794, -284.276, -69.9432 )
+
+[node name="Selectable5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 173.132, 266.607 )
+_name = "LivingRoom_FamilyPicture"
+
+[node name="Sprite" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 9 )
+
+[node name="Hover" type="Sprite" parent="Selectable5"]
+material = SubResource( 6 )
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( -30.2236, -30.0794, -28.0831, 61.0086, 30.1847, 26.0479, 23.7633, -59.0943 )

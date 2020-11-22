@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Bathroom/Bathroom Background.png" type="Texture" id=2]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Bathroom/Door.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Bathroom/Washing Machine.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Bathroom/Shower.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Bathroom/Towel.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Bathroom/Jeans.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Bathroom/Toilet.png" type="Texture" id=9]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=5]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 4
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+_room = "Bathroom"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 0.227783
+margin_top = -0.227737
+margin_right = 1280.23
+margin_bottom = 719.772
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 3 )]
+position = Vector2( 268.975, 381.503 )
+_name = "Bathroom_Door"
+
+[node name="Sprite" type="Sprite" parent="Selectable"]
+texture = ExtResource( 4 )
+
+[node name="Hover" type="Sprite" parent="Selectable"]
+modulate = Color( 1, 1, 1, 0.0941176 )
+material = SubResource( 1 )
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+polygon = PoolVector2Array( -69.5834, -223.847, -60.3175, 94.1194, 67.383, 108.045, 57.4526, -261.366 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 201.454, 598.3 )
+_name = "Bathroom_WashingMachine"
+
+[node name="Sprite" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 5 )
+
+[node name="Hover" type="Sprite" parent="Selectable2"]
+material = SubResource( 3 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -16.2657, -121.034, -37.2955, -109.711, -1.70656, -100.975, -1.17079, -91.9432, -6.76521, -79.1809, -58.6884, -52.957, -97.6746, -35.1248, -106.066, -21.4885, -118.479, -12.0479, -167.43, -20.6143, -163.705, 120.852, -164.656, 124.657, 59.7027, 122.344, 156.082, 122.685, 160.169, 117.576, 160.51, 119.96, 168.683, 112.808, 164.256, -103.79 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 470.969, 398.228 )
+_name = "Bathroom_Toilet"
+
+[node name="Sprite" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 9 )
+
+[node name="Hover" type="Sprite" parent="Selectable3"]
+material = SubResource( 4 )
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -19.2791, -150.928, -50.5932, -132.961, -53.6732, -109.347, -46.9997, -89.8401, -45.4597, -26.6986, -73.1803, 22.0692, -73.1803, 38.4962, -58.8067, 65.1902, -45.9731, 66.2168, -59.32, 121.658, -45.4597, 143.219, -22.8725, 150.919, 1.25473, 148.352, 37.7022, 129.872, 61.8294, 109.338, 64.9095, 83.1573, 50.5359, 23.0959, 59.2627, -0.00463867, 76.7165, -23.1052, 73.1231, -143.228 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 123.86, 534.229 )
+_name = "Bathroom_Jeans"
+
+[node name="Sprite" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 8 )
+
+[node name="Hover" type="Sprite" parent="Selectable4"]
+material = SubResource( 2 )
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+polygon = PoolVector2Array( -27.5748, -12.522, -23.6913, -24.4499, -30.0713, -27.5012, -26.7426, -32.2168, -13.4278, -33.049, -3.71915, -30.8299, 24.02, -46.9186, 53.1461, -41.9255, 59.2487, -37.4873, 71.7313, -34.7133, 74.5052, -27.7786, 69.2348, -18.0699, 31.7869, 1.90228, -15.0922, 21.0423, -30.6261, 33.5249, -37.8383, 45.1754, -71.1252, 41.2919, -71.4026, 32.4153, -52.54, 15.4944, -17.8661, -11.4125, -17.0339, -15.296, -23.6913, -15.296 )
+
+[node name="Selectable5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 804.154, 365.374 )
+_name = "Bathroom_Shower"
+
+[node name="Sprite" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 6 )
+
+[node name="Hover" type="Sprite" parent="Selectable5"]
+material = SubResource( 5 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( -40.3691, -304.469, -163.11, -281.906, -147.767, 98.9513, -107.154, 210.862, -67.4443, 232.522, -45.7841, 297.502, 146.45, 284.867, 121.179, 195.519, 158.182, 194.617, 152.767, 46.6059, 137.424, 27.6533, 138.327, 16.8232, 153.67, 1.48062, 142.84, -218.731, 80.5667, -291.834 )
+
+[node name="Selectable6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1028.38, 485.64 )
+_name = "Bathroom_Towel"
+
+[node name="Sprite" type="Sprite" parent="Selectable6"]
+texture = ExtResource( 7 )
+
+[node name="Hover" type="Sprite" parent="Selectable6"]
+material = SubResource( 6 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable6"]
+polygon = PoolVector2Array( -23.6453, -125.988, -59.3948, -115.66, -76.0779, -105.73, -76.0779, -87.8552, -62.5725, -69.9804, -54.231, -60.8444, -47.0811, -11.9867, -43.1089, 13.0379, -47.0811, 48.7875, -46.2866, 58.3207, -23.248, 77.7842, -10.9343, 93.6729, -1.00391, 111.15, 7.73486, 125.847, 15.282, 126.642, 17.6653, 100.426, 23.6235, 107.973, 31.5679, 109.164, 31.5679, 102.412, 25.6096, 65.0734, 24.418, 49.9791, 26.4041, 26.5433, 25.2124, -8.80899, 59.7703, -22.7115, 65.7285, -20.3282, 72.8784, -20.7255, 75.2617, -41.3808, 58.976, -60.4472, 51.826, -56.8723, 45.8678, -51.3112, 23.6237, -42.5724, 14.0905, -51.3112, -12.1259, -79.9108, -28.0146, -89.444, -44.3005, -100.566, -29.2062, -108.51, -24.8369, -104.538, -14.9064, -104.141, -12.5231, -112.483, -18.0842, -123.207 )

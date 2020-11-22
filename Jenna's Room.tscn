@@ -1,0 +1,179 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Poster Side.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Desktop.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Door.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Room Background.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cabinet.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Bed.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Carpet.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Poster.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Journal.png" type="Texture" id=10]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=11]
+[ext_resource path="res://MainMenu.tscn" type="PackedScene" id=12]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 4
+
+[sub_resource type="CanvasItemMaterial" id=5]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=8]
+blend_mode = 4
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+_room = "Jenna's Room"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable4" parent="." instance=ExtResource( 11 )]
+position = Vector2( 650.62, 568.418 )
+_name = "JennaRoom_Carpet"
+
+[node name="Sprite2" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+polygon = PoolVector2Array( -169.32, -107.236, -275.686, 112.89, 22.9341, 103.789, 153.758, 102.652, 234.528, 95.826, 271.5, 88.4316, 195.849, -70.8325, 161.721, -115.199 )
+disabled = true
+
+[node name="Selectable1" parent="." instance=ExtResource( 11 )]
+position = Vector2( 568.577, 516.154 )
+_name = "JennaRoom_Desktop"
+
+[node name="Desktop" type="Sprite" parent="Selectable1"]
+material = SubResource( 1 )
+texture = ExtResource( 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable1"]
+polygon = PoolVector2Array( 29.1832, -61.1006, 30.2927, -21.4338, -6.32269, 1.58948, 50.2648, 31.5476, 58.5864, 25.1676, 68.5724, 33.7667, 84.6611, 59.0092, 87.435, 59.8413, 104.911, 52.6292, 88.8219, 27.3867, 98.2532, 17.1233, 125.715, 31.825, 138.475, 25.445, 139.307, 18.5103, 144.022, 15.459, 145.687, 9.35638, 139.862, -0.352234, 131.263, -4.79047, 116.284, -4.23569, 108.239, 2.97644, 85.7706, 3.53125, 89.9315, -40.0189 )
+
+[node name="Hover" type="Sprite" parent="Selectable1"]
+visible = false
+material = SubResource( 2 )
+texture = ExtResource( 3 )
+
+[node name="Selectable2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 853.467, 302.065 )
+_name = "JennaRoom_Cabinet"
+
+[node name="Cabinet" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 6 )
+
+[node name="Hover" type="Sprite" parent="Selectable2"]
+material = SubResource( 3 )
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+polygon = PoolVector2Array( -93.6188, -123.5, 62.9249, -120.574, 94.6238, -95.7021, 92.6732, 109.121, 92.6732, 109.121, -65.8213, 124.727, -72.6487, 122.289, -88.742, 98.3926 )
+
+[node name="Selectable3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 288.91, 428.788 )
+_name = "JennaRoom_Bed"
+
+[node name="Sprite2" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 7 )
+
+[node name="Hover" type="Sprite" parent="Selectable3"]
+material = SubResource( 4 )
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -191.679, 163.893, 71.0352, 173.181, 194.431, -37.1234, 191.114, -165.827, 131.406, -183.739, 98.2355, -183.076, 41.1813, -161.846, 42.5081, -102.802, -191.679, 89.5899, -191.016, 138.683 )
+
+[node name="Selectable5" parent="." instance=ExtResource( 11 )]
+position = Vector2( 560.695, 164.249 )
+_name = "JennaRoom_Poster"
+
+[node name="Sprite2" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 9 )
+
+[node name="Hover" type="Sprite" parent="Selectable5"]
+visible = false
+material = SubResource( 5 )
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( -75.4422, -46.5025, -78.0701, -0.0762329, -81.866, 30.2906, -79.2381, 52.4818, -23.7602, 51.0219, 2.81085, 50.4379, 80.1879, 48.6859, 74.3481, -33.947, 70.8443, -52.0503, 10.6945, -45.0425 )
+
+[node name="Selectable6" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1044.17, 313.333 )
+_name = "JennaRoom_Door"
+
+[node name="Sprite2" type="Sprite" parent="Selectable6"]
+texture = ExtResource( 4 )
+
+[node name="Hover" type="Sprite" parent="Selectable6"]
+visible = false
+material = SubResource( 6 )
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable6"]
+polygon = PoolVector2Array( -47.3608, -188.829, -49.8818, 114.952, 45.9161, 189.321, 49.6975, -116.35 )
+
+[node name="Selectable7" parent="." instance=ExtResource( 11 )]
+_name = "JennaRoom_FirstWindow"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable7"]
+polygon = PoolVector2Array( -802.731, -112.927, -802.291, 89.971, -695.34, 23.952, -697.101, -170.584 )
+
+[node name="Selectable" parent="Selectable7" instance=ExtResource( 11 )]
+
+[node name="Selectable8" parent="." instance=ExtResource( 11 )]
+_name = "JennaRoom_SecondWindow"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable8"]
+polygon = PoolVector2Array( -991.037, -5.5451, -888.626, -61.6277, -886.187, 134.905, -990.062, 200.741 )
+
+[node name="Selectable9" parent="." instance=ExtResource( 11 )]
+position = Vector2( 483.669, 616.336 )
+_name = "JennaRoom_Journal"
+
+[node name="Sprite2" type="Sprite" parent="Selectable9"]
+texture = ExtResource( 10 )
+
+[node name="Hover" type="Sprite" parent="Selectable9"]
+material = SubResource( 7 )
+texture = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable9"]
+polygon = PoolVector2Array( -6.44803, -16.382, -31.6927, -0.438019, -30.198, 13.3469, -1.7977, 15.3399, 14.4785, 14.6756, 16.6376, 15.0077, 32.2494, -2.26492, 30.2564, -3.5936, 29.0938, -9.5726, 31.2529, -11.5656, 30.7546, -13.3925, 7.00473, -13.8908 )
+
+[node name="Selectable10" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1190.86, 345.228 )
+_name = "JennaRoom_SidePoster"
+
+[node name="Sprite2" type="Sprite" parent="Selectable10"]
+texture = ExtResource( 2 )
+
+[node name="Hover" type="Sprite" parent="Selectable10"]
+material = SubResource( 8 )
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable10"]
+polygon = PoolVector2Array( -69.9513, -114.78, 66.72, -48.9923, 69.0365, -43.4328, 60.2339, 113.16, 54.2112, 113.16, -69.9513, 34.8636 )
+
+[node name="MainMenu" parent="." instance=ExtResource( 12 )]

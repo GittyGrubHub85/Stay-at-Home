@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Main.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Dining Room/Dining Room Background.png" type="Texture" id=2]
+[ext_resource path="res://Selectable.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Dining Room/Left Vegetation.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Dining Room/Front Window.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Dining Room/Front Vegetation.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Dining Room/Dining Area.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Dining Room/Left Window.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Dining Room/Right Window.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Dining Room/Right Vegetation.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Dining Room/Paper.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Kitchen/Arrow.png" type="Texture" id=12]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+blend_mode = 1
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 1 )
+_room = "Dining Room"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selectable" parent="." instance=ExtResource( 3 )]
+position = Vector2( 624.515, 469.13 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable"]
+texture = ExtResource( 7 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable"]
+
+[node name="Selectable2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 639.729, 180.098 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable2"]
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable2"]
+
+[node name="Selectable3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 644.112, 255.678 )
+_name = "DiningRoom_FrontPlant"
+
+[node name="Sprite2" type="Sprite" parent="Selectable3"]
+texture = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable3"]
+polygon = PoolVector2Array( -188.413, -11.0947, -100.757, -21.3582, -13.3793, -4.15999, 78.437, -9.153, 111.446, -31.6217, 163.873, -36.3373, 188.838, -31.0669, 187.451, 29.6817, 121.71, 35.2295, 80.3787, 30.7913, 67.064, 26.9078, 39.3249, 27.4626, 36.551, 33.8426, 15.192, 31.0687, 2.15454, 35.5069, 2.15454, 35.5069, -6.99933, 23.5791, -31.1323, 27.4626, -102.977, 26.0757, -107.415, 33.0104, -121.562, 36.8939, -129.883, 26.6304, -189.8, 24.6887 )
+
+[node name="Selectable4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1090.61, 261.378 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable4"]
+texture = ExtResource( 9 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable4"]
+
+[node name="Selectable5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1086.91, 363.128 )
+_name = "DiningRoom_RightPlant"
+
+[node name="Sprite2" type="Sprite" parent="Selectable5"]
+texture = ExtResource( 10 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable5"]
+polygon = PoolVector2Array( 60.0311, 49.2551, 60.675, 18.9909, 47.3673, -16.8539, 41.3574, -17.2832, 26.762, -5.478, 10.2347, -21.1467, -5.00464, -20.5028, -15.5222, -37.0301, -31.8348, -47.762, -43.8546, -40.4643, -53.0841, -34.2397, -60.8112, -19.6442, -56.733, -14.0636, -48.5767, -15.9954, -44.2839, -6.55121, -39.7765, -0.32666, -35.0543, 0.531891, -30.547, -7.40979, -28.4005, -4.83411, -22.8199, 13.6249, -16.8101, 14.4835, -6.078, 12.1224, 5.94177, 17.9177, 5.72717, 33.1572, 14.7421, 32.7279, 18.3909, 26.5033, 24.1862, 30.1522, 25.2594, 34.8743, 39.8549, 38.3085, 56.8114, 50.7576 )
+
+[node name="Selectable6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 174.81, 257.578 )
+
+[node name="Sprite2" type="Sprite" parent="Selectable6"]
+texture = ExtResource( 8 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable6"]
+
+[node name="Selectable7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 182.41, 343.228 )
+_name = "DiningRoom_LeftPlant"
+
+[node name="Sprite2" type="Sprite" parent="Selectable7"]
+texture = ExtResource( 4 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable7"]
+polygon = PoolVector2Array( -72.2692, 18.6349, 65.9213, -56.9694, 71.1786, -22.6721, 68.4248, -14.9113, 13.5992, 20.3873, -39.9747, 46.1729, -71.5182, 55.6859 )
+
+[node name="Selectable8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 868.123, 406.365 )
+_name = "DiningRoom_Paper"
+
+[node name="Sprite2" type="Sprite" parent="Selectable8"]
+texture = ExtResource( 11 )
+
+[node name="Hover" type="Sprite" parent="Selectable8"]
+material = SubResource( 1 )
+texture = ExtResource( 11 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable8"]
+polygon = PoolVector2Array( -12.236, -12.6375, -20.6099, 0.342163, -21.0286, 5.15717, -8.46771, 8.29742, 8.28021, 9.34415, 14.2466, 11.961, 16.1308, 10.4956, 15.5027, 6.83197, 21.0505, -3.74014, 20.3177, -5.72894 )
+
+[node name="Selectable9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 619.934, 691.16 )
+_name = "Dining_Room_to_Kitchen"
+
+[node name="Hover" type="Sprite" parent="Selectable9"]
+texture = ExtResource( 12 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Selectable9"]
+polygon = PoolVector2Array( -622.478, -34.9172, 551.679, -37.6246, 635.612, 45.4057, -677.531, 35.4781 )

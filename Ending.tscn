@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Text Dialog Assets/addons/My RPG Text Dialogue/default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://Ending.gd" type="Script" id=2]
+
+[node name="Ending" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="MainMenu" type="Button" parent="."]
+margin_left = 529.692
+margin_top = 341.051
+margin_right = 772.692
+margin_bottom = 381.051
+theme = ExtResource( 1 )
+text = "Back to Main Menu"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 604.683
+margin_top = 456.637
+margin_right = 660.683
+margin_bottom = 496.637
+theme = ExtResource( 1 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Follow" type="Button" parent="."]
+margin_left = 36.2593
+margin_top = 28.6875
+margin_right = 438.259
+margin_bottom = 68.6875
+theme = ExtResource( 1 )
+text = "Follow DeveloperMode on itch.io"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 524.047
+margin_top = 170.649
+margin_right = 786.047
+margin_bottom = 204.649
+theme = ExtResource( 1 )
+text = "Thank you for playing"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 876.653
+margin_top = 589.173
+margin_right = 1255.65
+margin_bottom = 697.173
+theme = ExtResource( 1 )
+text = "Credits:
+- DeveloperMode (programmer)
+- Internet Sources (domain)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="MainMenu" to="." method="_on_MainMenu_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]
+[connection signal="pressed" from="Follow" to="." method="_on_Follow_pressed"]

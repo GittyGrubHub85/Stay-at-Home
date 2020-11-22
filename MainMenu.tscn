@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Text Dialog Assets/addons/My RPG Text Dialogue/default_theme.tres" type="Theme" id=1]
+[ext_resource path="res://MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Assets/M0Wg1G.png" type="Texture" id=3]
+[ext_resource path="res://Assets/p8m09s.png" type="Texture" id=4]
+
+[node name="MainMenu" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 0.819608, 0.0431373, 0.0431373, 0.729412 )
+margin_right = 1280.0
+margin_bottom = 720.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 538.992
+margin_top = 148.998
+margin_right = 702.992
+margin_bottom = 182.998
+theme = ExtResource( 1 )
+text = "Stay At HOME"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 672.537
+margin_top = 286.754
+margin_right = 916.537
+margin_bottom = 300.754
+text = "previous data will be lost once started"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 20.1357
+margin_top = 7.89197
+margin_right = 215.136
+margin_bottom = 41.892
+theme = ExtResource( 1 )
+text = "Developer Mode"
+
+[node name="Start" type="Button" parent="."]
+margin_left = 585.599
+margin_top = 274.161
+margin_right = 656.599
+margin_bottom = 314.161
+theme = ExtResource( 1 )
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Continue" type="Button" parent="."]
+margin_left = 564.09
+margin_top = 348.808
+margin_right = 685.09
+margin_bottom = 388.808
+theme = ExtResource( 1 )
+text = "Continue"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+margin_left = 588.086
+margin_top = 419.575
+margin_right = 652.086
+margin_bottom = 459.575
+theme = ExtResource( 1 )
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="M0Wg1G" type="Sprite" parent="."]
+position = Vector2( 1157.21, 151.191 )
+scale = Vector2( 0.464538, 0.464538 )
+texture = ExtResource( 3 )
+
+[node name="p8m09s" type="Sprite" parent="."]
+position = Vector2( 241.474, 145.581 )
+scale = Vector2( 0.569571, 0.569571 )
+texture = ExtResource( 4 )
+[connection signal="pressed" from="Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

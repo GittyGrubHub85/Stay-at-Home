@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DialogBox_Next.wav-ad4118eb604206092e35e655fb4152aa.sample"
+
+[deps]
+
+source_file="res://Sound Assets/DialogBox_Next.wav"
+dest_files=[ "res://.import/DialogBox_Next.wav-ad4118eb604206092e35e655fb4152aa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
